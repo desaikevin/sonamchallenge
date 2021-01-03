@@ -4,4 +4,7 @@
    <FileRef
       location = "group:dudewhydoesitkeepstopping.playground">
    </FileRef>
+   <FileRef
+      location = "group:nestedJson.swift">
+   </FileRef>
 </Workspace>
