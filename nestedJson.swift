@@ -48,7 +48,7 @@ func getRequest(site: String, completion: @escaping (responder?, Error?) -> Void
     var request = URLRequest(url: url!)
     let session = URLSession.shared
     request.httpMethod = "GET"
-    request.timeoutInterval = 4
+    request.timeoutInterval = 30
     request.setValue("application/json", forHTTPHeaderField: "Accept")
     let task = session.dataTask(with: request) { (data, response, error) in
         guard error == nil else {
